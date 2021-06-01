@@ -26,9 +26,11 @@ class SparseArray {
     }
 
     /**
-     * @author Huilong.Ning
-     * @description 二维数组赋值
-     * @date 2021/6/1 17:43
+     * 二维数组赋值
+     *
+     * @param x
+     * @param y
+     * @param value
      */
     public void setValue(int x, int y, Object value) {
         try {
@@ -40,9 +42,9 @@ class SparseArray {
     }
 
     /**
-     * @author Huilong.Ning
-     * @description 二维数组转稀疏数组
-     * @date 2021/6/1 17:43
+     * 二维数组转稀疏数组
+     *
+     * @return
      */
     public Object[][] convertSparseArray() {
         if (objectArr == null) return null;
@@ -74,9 +76,10 @@ class SparseArray {
     }
 
     /**
-     * @author Huilong.Ning
-     * @description 稀疏数组转换为二维数组
-     * @date 2021/6/1 17:58
+     * 稀疏数组转换为二维数组
+     *
+     * @param spareseArr
+     * @return
      */
     public Object[][] convertObjectArray(Object[][] spareseArr) {
         //获取第一行
