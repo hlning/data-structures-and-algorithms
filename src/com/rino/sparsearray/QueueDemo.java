@@ -106,6 +106,7 @@ class AnnulusQueue {
     }
 
     public boolean isFull() {
+        //
         return (rear + 1) % maxSize == front;
     }
 
